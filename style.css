@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap");
 
 :root {
-  --cor-de-fundo: #1e1e1e;
+  --cor-de-fundo: #000000;
   --verde: #6fff57;
   --branco: #ffffff;
   --botao-ativo: #3a375e;
@@ -57,4 +57,17 @@ body {
 
 .botoes {
   display: block;
+}
+/* código escondido */
+
+@media screen and (min-width: 768px){
+    .botoes{
+        display:flex;
+    }
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
 }
